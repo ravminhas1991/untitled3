@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1> ADD A EMPLOYEE</h1>
+    <form method="post" >{% csrf_token %}
+        {{ form |linebreaks}}
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <p><button><a href=http://127.0.0.1:8000/profile/>Customers</a></button></p>
+{% endblock %}

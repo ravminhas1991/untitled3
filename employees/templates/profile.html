@@ -1,0 +1,5 @@
+{% for i in employees %}
+    {{ i| linebreaks  }}
+    <p><a href="edit/{{ i }}"><button name="" type="submit" value="{{ i }}">EDIT</button> </a></p>
+    <p><a href="delete/{{ i }}"><button name="" type="submit" value="{{ i }}">DELETE</button> </a></p>
+{% endfor %}
